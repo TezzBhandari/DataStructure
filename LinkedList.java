@@ -66,6 +66,13 @@ public class LinkedList<Item> implements Iterable<Item>{
         N++;
     }
 
+    public Item get() {
+        if (isEmpty()) {
+            throw new RuntimeException("List is Empty!");
+        }
+        return tail.data;
+    }
+
     public Item get(int index) {
         if (index < 0 || index >= N) {
             throw new RuntimeException("Index out of bound!");
