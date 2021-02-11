@@ -124,5 +124,10 @@ public class LinkedList<Item> implements Iterable<Item>{
             current = current.next;
             return item;
         }
+
+        @Override
+        public void remove() {
+            throw new UnsupportedOperationException();
+        }
     }
 }
