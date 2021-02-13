@@ -4,12 +4,12 @@ package DataStructure.Queues;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class queue<Item> implements Iterable<Item> {
+public class LinkedQueue<Item> implements Iterable<Item> {
     private Node front;
     private Node rear;
     private int N;
 
-    public queue() {
+    public LinkedQueue() {
         this.front = this.rear = null;
         this.N = 0;
     }
